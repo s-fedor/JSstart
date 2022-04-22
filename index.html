@@ -87,9 +87,22 @@
     </table>
     <hr />
     <p>Привет, я риелтор! Свяжитесь со мной по интересующему вас вопросу.</p>
-    <form action="">
-      <p><label for="name">Ім'я</label> <input type="text" id="name" /></p>
-      <p><label for="post">Пошта</label> <input type="text" id="post" /></p>
+    <form action="/">
+      <p>
+        Тип об'єкту: <input type="radio" name="object" id="house" />
+        <label for="house">Будинок</label> <input type="radio" name="object" id="float" /><label
+          for="float"
+          >Квартира</label
+        >
+        <input type="radio" name="object" id="sklad" /><label for="sklad">Нежиле приміщення</label>
+        <input type="radio" name="object" id="garag" /><label for="garag">Гараж</label>
+      </p>
+      <p><label for="name">Ім'я</label> <input type="text" id="name" placeholder="Ваше ім'я" /></p>
+      <p>
+        <label for="post">Пошта</label> <input type="email" id="post" placeholder="Ваша пошта" />
+      </p>
+      <p><label for="data">Дата зустрічі</label> <input type="date" id="data" /></p>
+      <p><input type="submit" value="Жми" /></p>
     </form>
   </body>
 </html>
